@@ -10,3 +10,17 @@
 </div>
 
 **R1-OneVision** is a versatile **multimodal reasoning large model**, designed to tackle complex visual reasoning tasks. It seamlessly integrates visual and textual data to offer precise interpretations of multimodal information, excelling in areas such as mathematics, science, deep image understanding, and logical reasoning. With its robust ability to perform multimodal reasoning, **R1-OneVision emerges as a powerful AI assistant capable of addressing a wide range of problem-solving challenges across different domains**.
+
+## Roadmap for R1-V
+> We are building a general framework 
+>
+> Welcome Ideas and Contribution. Stay tuned!
+
+## 🆕 News
+
+> We have presented a  🔥🔥🔥
+
+
+- **[2025-02-12]**  🔥🔥🔥
+
+## 📊 Datasets, Models, and Evaluation Results
