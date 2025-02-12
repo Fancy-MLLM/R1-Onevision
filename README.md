@@ -1,4 +1,5 @@
-# R1-Onevision
-R1-Onevision, an open-source visual language model capable of deep reasoning.
-# Dataset
-You can download the dataset from the Huggingface: https://huggingface.co/datasets/Fancy-MLLM/R1-onevision
+![LOGO](http://opencompass.openxlab.space/utils/MMLB.jpg)
+
+<b>R1-Onevision：An Open-Source Multimodal Large Language Model Capable of Deep Reasoning. </b>
+
+[![][github-contributors-shield]][github-contributors-link] • [![][github-forks-shield]][github-forks-link] • [![][github-stars-shield]][github-stars-link] • [![][github-issues-shield]][github-issues-link] • [![][github-license-shield]][github-license-link]
