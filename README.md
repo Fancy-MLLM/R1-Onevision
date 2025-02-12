@@ -21,6 +21,8 @@
 > We have presented a  🔥🔥🔥
 
 
-- **[2025-02-12]**  🔥🔥🔥
+- **[2025-02-12]**  We have released the dataset, hf models and reasoning benchmark. For more details, please check our blog! 🔥🔥🔥
 
-## 📊 Datasets, Models, and Evaluation Results
+## 📊 Datasets, Models
+
+### Evaluation Results
