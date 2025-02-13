@@ -1,4 +1,7 @@
-![LOGO](asset/logo.gif)
+<div style="text-align: center;">
+    <img src="asset/logo.gif" alt="LOGO">
+</div>
+
 
 <b>🦖 R1-Onevision：An Open-Source Multimodal Large Language Model Capable of Deep Reasoning. </b>
 
