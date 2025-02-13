@@ -13,7 +13,7 @@
 
 ![DEMO](/asset/demo.jpg)
 
-## Roadmap for R1-Onevision
+## 🗺️ Roadmap for R1-Onevision
 > R1-Onevision bridges the gap between the multimodal capabilities of Qwen-VL and the deep reasoning abilities of DeepSeek-R1, creating a state-of-the-art multimodal reasoning model that goes beyond the capabilities of GPT-4o. 
 >
 > Welcome Ideas and Contribution. Stay tuned!
