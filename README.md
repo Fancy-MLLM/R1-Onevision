@@ -1,6 +1,6 @@
 ![LOGO]()
 
-<b>R1-Onevision：An Open-Source Multimodal Large Language Model Capable of Deep Reasoning. </b>
+<c>R1-Onevision：An Open-Source Multimodal Large Language Model Capable of Deep Reasoning. </c>
 
 <a href="https://huggingface.co/datasets/Fancy-MLLM/R1-onevision">🤗 HF Dataset</a> •
 <a href="https://huggingface.co/datasets/Fancy-MLLM/R1-OneVision-Bench">🤗 Reasoning Benchmark</a> •
