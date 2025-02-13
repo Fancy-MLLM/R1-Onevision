@@ -43,4 +43,4 @@
 ## 🏗️ Start
 
 ## 🧑‍💻 Authors
-Authors: Yi Yang*, Xiaoxuan He*, Hongkun Pan*, Xiyan Jiang, Yan Deng, Xingtao Yang, Haoyu Lu, Minfeng Zhu†, Bo Zhang†, Wei Chen†
+Yi Yang*, Xiaoxuan He*, Hongkun Pan*, Xiyan Jiang, Yan Deng, Xingtao Yang, Haoyu Lu, Minfeng Zhu†, Bo Zhang†, Wei Chen†
