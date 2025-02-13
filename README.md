@@ -24,7 +24,7 @@
 
 
 - **[2024-02-13]** We will release the second verson of dataset, models and code in next few days, Stay tuned! 🔥🔥🔥
-- **[2025-02-12]** We have released the first verson of [dataset](https://github.com/kge-sun/mm-math](https://huggingface.co/datasets/Fancy-MLLM/R1-onevision), [hf models](https://huggingface.co/Fancy-MLLM/R1-OneVision-7B) and [reasoning benchmark](https://huggingface.co/datasets/Fancy-MLLM/R1-OneVision-Bench). For more details, please check our blog! 🔥🔥🔥
+- **[2025-02-12]** We have released the first verson of [dataset](https://huggingface.co/datasets/Fancy-MLLM/R1-onevision), [hf models](https://huggingface.co/Fancy-MLLM/R1-OneVision-7B) and [reasoning benchmark](https://huggingface.co/datasets/Fancy-MLLM/R1-OneVision-Bench). For more details, please check our blog! 🔥🔥🔥
 
 ## 📊 Datasets, Models
 
