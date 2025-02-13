@@ -1,4 +1,4 @@
-![LOGO]()
+![LOGO](asset/logo.gif)
 
 <b>🦖 R1-Onevision：An Open-Source Multimodal Large Language Model Capable of Deep Reasoning. </b>
 
