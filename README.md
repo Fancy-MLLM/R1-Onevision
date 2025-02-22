@@ -33,12 +33,27 @@
 
 ### Datasets
 
+The **R1-Onevision** dataset is a meticulously crafted resource designed to empower models with advanced multimodal reasoning capabilities. Aimed at bridging the gap between visual and textual understanding, this dataset provides rich, context-aware reasoning tasks across diverse domains, including natural scenes, science, mathematical problems, OCR-based content, and complex charts.
 
-  
+It combines high-quality data from LLaVA-OneVision with domain-specific datasets, each carefully selected and filtered to provide a solid foundation for complex visual reasoning tasks. With a focus on enabling deep reasoning and accurate model predictions, **R1-Onevision** equips models to handle a variety of visual and textual inputs, tackling intricate reasoning challenges with precision.
+
+As shown in the chart, the R1-Onevision dataset is a carefully crafted tool designed to push the boundaries of multimodal reasoning. By combining advanced captioning techniques, innovative reasoning methodologies, and rigorous quality control, we’ve created a dataset that not only supports reasoning tasks but also enhances the ability of models to think deeply and critically.
+![R1-Onevision-Dataset](https://github.com/user-attachments/assets/8b0173e8-de06-4b39-b0ba-85f2f52f8c8e)
 
 ### Models
 
+This is a multimodal large language model fine-tuned from Qwen2.5-VL on the **R1-Onevision** dataset. The model enhances vision-language understanding and reasoning capabilities, making it suitable for various tasks such as visual reasoning, image understanding. With its robust ability to perform multimodal reasoning, R1-Onevision emerges as a powerful AI assistant capable of addressing a wide range of problem-solving challenges across different domains.
+
 ### Performance
+
+We evaluated R1-Onevision on Mathvision, Mathverse and R1-Onevision-Bench, and our model exhibits stronger reasoning performance than Qwen2.5-VL-72B and GPT-4V. The evaluation results are as follows:
+
+|  | Mathvision | Mathverse | R1-Onevision-Bench |
+| --- | --- | --- | --- |
+| Qwen2.5-VL-72B | 23.20% | 37.35% |  |
+| R1-Onevision | 26.16% | 44.06% |  |
+| GPT-4V | 22.76% | 39.4% |  |
+| GPT-4o |  |  |  |
 
 ## 🏗️ Start
 
