@@ -44,27 +44,6 @@ As shown in the chart, the R1-Onevision dataset is a carefully crafted tool desi
 
 This is a multimodal large language model fine-tuned from Qwen2.5-VL on the **R1-Onevision** dataset. The model enhances vision-language understanding and reasoning capabilities, making it suitable for various tasks such as visual reasoning, image understanding. With its robust ability to perform multimodal reasoning, R1-Onevision emerges as a powerful AI assistant capable of addressing a wide range of problem-solving challenges across different domains.
 
-- Framework: The training process uses the open-source **LLama-Factory** library, with **Qwen2.5-VL-Instruct** as the base model. This model comes in three variants: 3B, 7B, and 72B.
-- Parameters: For efficiency, we use a resolution of 512 for image inputs to save GPU memory. The training follows a full model SFT (Supervised Fine-Tuning) approach with a learning rate of 1e-5, trained for one epoch.
-    
-The training configuration is as follows:
-```python
-image_resolution: 512
-cutoff_len: 8192
-per_device_train_batch_size: 1
-gradient_accumulation_steps: 16
-learning_rate: 1.0e-5
-num_train_epochs: 1.0
-lr_scheduler_type: cosine
-warmup_ratio: 0.05
-bf16: true
-flash_attn: fa2
-```
-
-Training loss curve:
-
-<img src="https://cdn-uploads.huggingface.co/production/uploads/65af78bb3e82498d4c65ed2a/8BNyo-v68aFvab2kXxtt1.png"/>
-
 You can load the model using the Hugging Face `transformers` library:
 
 ```python
@@ -126,6 +105,27 @@ We evaluated R1-Onevision on Mathvision, Mathverse and R1-Onevision-Bench, and o
 | GPT-4o |  |  |  |
 
 ## 🏗️ Start
+
+- Framework: The training process uses the open-source **LLama-Factory** library, with **Qwen2.5-VL-Instruct** as the base model. This model comes in three variants: 3B, 7B, and 72B.
+- Parameters: For efficiency, we use a resolution of 512 for image inputs to save GPU memory. The training follows a full model SFT (Supervised Fine-Tuning) approach with a learning rate of 1e-5, trained for one epoch.
+    
+The training configuration is as follows:
+```python
+image_resolution: 512
+cutoff_len: 8192
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 1.0e-5
+num_train_epochs: 1.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+bf16: true
+flash_attn: fa2
+```
+
+Training loss curve:
+
+<img src="https://cdn-uploads.huggingface.co/production/uploads/65af78bb3e82498d4c65ed2a/8BNyo-v68aFvab2kXxtt1.png"/>
 
 ## 🧑‍💻 Authors
 Yi Yang*, Xiaoxuan He*, Hongkun Pan*, Xiyan Jiang, Yan Deng, Xingtao Yang, Haoyu Lu, Minfeng Zhu†, Bo Zhang†, Wei Chen†
