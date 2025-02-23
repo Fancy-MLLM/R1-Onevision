@@ -44,6 +44,76 @@ As shown in the chart, the R1-Onevision dataset is a carefully crafted tool desi
 
 This is a multimodal large language model fine-tuned from Qwen2.5-VL on the **R1-Onevision** dataset. The model enhances vision-language understanding and reasoning capabilities, making it suitable for various tasks such as visual reasoning, image understanding. With its robust ability to perform multimodal reasoning, R1-Onevision emerges as a powerful AI assistant capable of addressing a wide range of problem-solving challenges across different domains.
 
+- Framework: The training process uses the open-source **LLama-Factory** library, with **Qwen2.5-VL-Instruct** as the base model. This model comes in three variants: 3B, 7B, and 32B.
+- Parameters: For efficiency, we use a resolution of 518 for image inputs to save GPU memory. The training follows a full model SFT (Supervised Fine-Tuning) approach with a learning rate of 1e-5, trained for one epoch.
+    
+The training configuration is as follows:
+```python
+image_resolution: 518
+cutoff_len: 8192
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 1.0e-5
+num_train_epochs: 1.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+bf16: true
+flash_attn: fa2
+```
+
+Training loss curve:
+
+<img src="https://cdn-uploads.huggingface.co/production/uploads/65af78bb3e82498d4c65ed2a/8BNyo-v68aFvab2kXxtt1.png"/>
+
+You can load the model using the Hugging Face `transformers` library:
+
+```python
+from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration
+import torch
+from qwen_vl_utils import process_vision_info
+
+MODEL_ID = "Fancy-MLLM/R1-Onevision-7B"
+processor = AutoProcessor.from_pretrained(MODEL_ID, trust_remote_code=True)
+model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+    MODEL_ID,
+    trust_remote_code=True,
+    torch_dtype=torch.bfloat16
+).to("cuda").eval()
+
+messages = [
+    {
+        "role": "user",
+        "content": [
+            {"type": "image", "image": "<your image path>"},
+            {"type": "text", "text": "Hint: Please answer the question and provide the final answer at the end. Question: Which number do you have to write in the last daisy?"},
+        ],
+    }
+]
+
+# Preparation for inference
+text = processor.apply_chat_template(
+    messages, tokenize=False, add_generation_prompt=True
+)
+image_inputs, video_inputs = process_vision_info(messages)
+inputs = processor(
+    text=[text],
+    images=image_inputs,
+    videos=video_inputs,
+    padding=True,
+    return_tensors="pt",
+)
+inputs = inputs.to(model.device)
+
+generated_ids = model.generate(**inputs, max_new_tokens=4096)
+generated_ids_trimmed = [
+    out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
+]
+output_text = processor.batch_decode(
+    generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
+)
+print(output_text)
+```
+
 ### Performance
 
 We evaluated R1-Onevision on Mathvision, Mathverse and R1-Onevision-Bench, and our model exhibits stronger reasoning performance than Qwen2.5-VL-72B and GPT-4V. The evaluation results are as follows:
