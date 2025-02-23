@@ -44,12 +44,12 @@ As shown in the chart, the R1-Onevision dataset is a carefully crafted tool desi
 
 This is a multimodal large language model fine-tuned from Qwen2.5-VL on the **R1-Onevision** dataset. The model enhances vision-language understanding and reasoning capabilities, making it suitable for various tasks such as visual reasoning, image understanding. With its robust ability to perform multimodal reasoning, R1-Onevision emerges as a powerful AI assistant capable of addressing a wide range of problem-solving challenges across different domains.
 
-- Framework: The training process uses the open-source **LLama-Factory** library, with **Qwen2.5-VL-Instruct** as the base model. This model comes in three variants: 3B, 7B, and 32B.
-- Parameters: For efficiency, we use a resolution of 518 for image inputs to save GPU memory. The training follows a full model SFT (Supervised Fine-Tuning) approach with a learning rate of 1e-5, trained for one epoch.
+- Framework: The training process uses the open-source **LLama-Factory** library, with **Qwen2.5-VL-Instruct** as the base model. This model comes in three variants: 3B, 7B, and 72B.
+- Parameters: For efficiency, we use a resolution of 512 for image inputs to save GPU memory. The training follows a full model SFT (Supervised Fine-Tuning) approach with a learning rate of 1e-5, trained for one epoch.
     
 The training configuration is as follows:
 ```python
-image_resolution: 518
+image_resolution: 512
 cutoff_len: 8192
 per_device_train_batch_size: 1
 gradient_accumulation_steps: 16
