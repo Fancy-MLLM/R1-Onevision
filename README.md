@@ -97,12 +97,12 @@ print(output_text)
 
 We evaluated R1-Onevision on Mathvision, Mathverse and R1-Onevision-Bench, and our model exhibits stronger reasoning performance than Qwen2.5-VL-72B and GPT-4V. The evaluation results are as follows:
 
-|  | Mathvision | Mathverse | R1-Onevision-Bench |
+|  | R1-Onevision-Bench | Mathverse | Mathvision |
 | --- | --- | --- | --- |
-| R1-Onevision | 26.16 | 44.06 | 41.71 |
-| Qwen2.5-VL-7B | 23.20 | 37.35 | 27.95 |
-| GPT-4V | 22.76 | 39.40 | - |
-| GPT-4o | 30.39 | 43.22 | 32.07 |
+| Qwen2.5-VL-7B | 27.95 | 37.35 | 23.20 |
+| GPT-4V | - | 39.40 | 22.76 |
+| GPT-4o | 32.07 | 43.22 | 30.39 |
+| R1-Onevision | 41.71 | 44.06 | 26.16 |
 
 ## 🏗️ Start
 
