@@ -99,10 +99,10 @@ We evaluated R1-Onevision on Mathvision, Mathverse and R1-Onevision-Bench, and o
 
 |  | Mathvision | Mathverse | R1-Onevision-Bench |
 | --- | --- | --- | --- |
-| Qwen2.5-VL-72B | 23.20% | 37.35% |  |
-| R1-Onevision | 26.16% | 44.06% |  |
-| GPT-4V | 22.76% | 39.4% |  |
-| GPT-4o |  |  |  |
+| R1-Onevision | 26.16 | 44.06 | 41.71 |
+| Qwen2.5-VL-7B | 23.20 | 37.35 | 27.95 |
+| GPT-4V | 22.76 | 39.40 | - |
+| GPT-4o | 30.39 | 43.22 | 32.07 |
 
 ## 🏗️ Start
 
