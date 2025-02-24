@@ -127,5 +127,5 @@ Training loss curve:
 
 <img src="https://cdn-uploads.huggingface.co/production/uploads/65af78bb3e82498d4c65ed2a/8BNyo-v68aFvab2kXxtt1.png"/>
 
-## 🧑‍💻 Authors
-Yi Yang*, Xiaoxuan He*, Hongkun Pan*, Xiyan Jiang, Yan Deng, Xingtao Yang, Haoyu Lu, Minfeng Zhu†, Bo Zhang†, Wei Chen†
+## 🧑‍💻 Institution
+Zhejiang University
