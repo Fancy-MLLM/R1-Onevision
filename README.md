@@ -14,7 +14,7 @@
 
 **R1-OneVision** is a versatile **multimodal reasoning large model**, designed to tackle complex visual reasoning tasks. It seamlessly integrates visual and textual data to offer precise interpretations of multimodal information, excelling in areas such as mathematics, science, deep image understanding, and logical reasoning. With its robust ability to perform multimodal reasoning, **R1-OneVision emerges as a powerful AI assistant capable of addressing a wide range of problem-solving challenges across different domains**.
 
-![DEMO](asset/demo.jpg)
+![DEMO](asset/demo1.png)
 
 ## 🗺️ Roadmap for R1-Onevision
 > R1-Onevision bridges the gap between the multimodal capabilities of Qwen-VL and the deep reasoning abilities of DeepSeek-R1, creating a state-of-the-art multimodal reasoning model that goes beyond the capabilities of GPT-4o. 
