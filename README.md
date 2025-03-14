@@ -10,7 +10,7 @@
 <a href="https://huggingface.co/Fancy-MLLM/R1-OneVision-7B">🤗 SFT weights</a> •
 <a href="https://huggingface.co/Fancy-MLLM/R1-OneVision-7B-RL">🤗 RL weights</a> •
 <a href="https://huggingface.co/spaces/Fancy-MLLM/R1-OneVision">🤗 Demo</a> •
-<a href="https://yangyi-vai.notion.site/r1-onevision?pvs=4">📝 Report</a>
+<a href="https://arxiv.org/pdf/2503.10615">📝 Paper</a>
 </div>
 
 **R1-OneVision** is a versatile **multimodal reasoning large model**, designed to tackle complex visual reasoning tasks. It seamlessly integrates visual and textual data to offer precise interpretations of multimodal information, excelling in areas such as mathematics, science, deep image understanding, and logical reasoning. With its robust ability to perform multimodal reasoning, **R1-OneVision emerges as a powerful AI assistant capable of addressing a wide range of problem-solving challenges across different domains**.
