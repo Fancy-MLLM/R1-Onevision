@@ -1,0 +1,4 @@
+datasets:
+    - json_path: /data/shz/project/vlm-r1/VLM-R1/src/data/rec_jsons_processed/refcoco_train.json
+    - json_path: /data/shz/project/vlm-r1/VLM-R1/src/data/rec_jsons_processed/refcocop_train.json
+    - json_path: /data/shz/project/vlm-r1/VLM-R1/src/data/rec_jsons_processed/refcocog_train.json
